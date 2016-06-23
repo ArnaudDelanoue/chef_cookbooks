@@ -1,6 +1,6 @@
 # CHEF Training
 
-Some usefull cookbooks...
+Some very usefull cookbooks...
 
 
 
