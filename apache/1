@@ -1,0 +1,16 @@
+package 'httpd' do
+	action :install
+end
+
+file '/var/www/html/index.html' do
+	content "My Super Web Server
+
+My IPADDRESS is : #{node['ipaddress']}
+and my HOSTNAME is: #{node['hostname']}
+
+"
+end
+
+service 'httpd' do
+	action [:enable, :start]
+end

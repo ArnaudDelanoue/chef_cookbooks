@@ -11,9 +11,9 @@ provisioner:
 #   name: inspec
 
 platforms:
-- name: oraclelinux_6
+- name: centos67
   driver_config:
-    image: oraclelinux:6
+    image: centos:6.7
     platform: rhel
 
 suites:

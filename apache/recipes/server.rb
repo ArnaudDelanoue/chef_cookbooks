@@ -2,8 +2,8 @@ package 'httpd' do
 	action :install
 end
 
-file '/var/www/html/index.html' do
-	content 'My Super Web Server'
+template '/var/www/html/index.html' do
+	source 'index.html.erb'
 end
 
 service 'httpd' do
