@@ -1,7 +1,0 @@
-name 'librojueves'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
-license 'all_rights'
-description 'Installs/Configures librojueves'
-long_description 'Installs/Configures librojueves'
-version '0.1.0'

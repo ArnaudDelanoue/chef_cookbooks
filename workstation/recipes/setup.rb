@@ -7,5 +7,13 @@ package 'git' do
 end
 
 file '/etc/motd' do
-	content 'Property of Arnaud'
+	content "Property of Arnaud
+
+HOSTNAME: #{node['hostname']}
+IP: #{node['ipaddress']}
+MEM: #{node['memory']['total']}
+CPU: #{node['cpu']['0']['mhz']} MHz
+
+
+"
 end
