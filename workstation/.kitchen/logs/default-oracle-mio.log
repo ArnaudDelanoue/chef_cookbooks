@@ -1,0 +1,234 @@
+I, [2016-06-23T09:17:16.307706 #29487]  INFO -- default-oracle-mio: -----> Creating <default-oracle-mio>...
+I, [2016-06-23T09:17:16.402411 #29487]  INFO -- default-oracle-mio: Sending build context to Docker daemon 62.46 kB
+I, [2016-06-23T09:17:16.402939 #29487]  INFO -- default-oracle-mio: Sending build context to Docker daemon 
+I, [2016-06-23T09:17:16.467122 #29487]  INFO -- default-oracle-mio: Step 0 : FROM oraclelinux:7
+I, [2016-06-23T09:17:16.673529 #29487]  INFO -- default-oracle-mio: 7: Pulling from oraclelinux
+I, [2016-06-23T09:17:16.679546 #29487]  INFO -- default-oracle-mio: 63e1c02817fc: Pulling fs layer
+I, [2016-06-23T09:17:16.681630 #29487]  INFO -- default-oracle-mio: 575e955ac1f9: Pulling fs layer
+I, [2016-06-23T09:17:16.682022 #29487]  INFO -- default-oracle-mio: 3690474eb5b4: Already exists
+I, [2016-06-23T09:17:16.762317 #29487]  INFO -- default-oracle-mio: 575e955ac1f9: Verifying Checksum
+I, [2016-06-23T09:17:16.763109 #29487]  INFO -- default-oracle-mio: 575e955ac1f9: Download complete
+I, [2016-06-23T09:17:20.931706 #29487]  INFO -- default-oracle-mio: 63e1c02817fc: Verifying Checksum
+I, [2016-06-23T09:17:20.932578 #29487]  INFO -- default-oracle-mio: 63e1c02817fc: Download complete
+I, [2016-06-23T09:17:47.898679 #29487]  INFO -- default-oracle-mio: 63e1c02817fc: Pull complete
+I, [2016-06-23T09:17:48.053661 #29487]  INFO -- default-oracle-mio: 575e955ac1f9: Pull complete
+I, [2016-06-23T09:17:48.053804 #29487]  INFO -- default-oracle-mio: Digest: sha256:da1f6e6bed7bb453dedb3cdd4c9cb56f87b01ea27a56d17427c8f7cfb1e84622
+I, [2016-06-23T09:17:48.069824 #29487]  INFO -- default-oracle-mio: Status: Downloaded newer image for oraclelinux:7
+I, [2016-06-23T09:17:48.071088 #29487]  INFO -- default-oracle-mio:  ---> 575e955ac1f9
+I, [2016-06-23T09:17:48.071662 #29487]  INFO -- default-oracle-mio: Step 1 : RUN yum clean all
+I, [2016-06-23T09:17:48.357440 #29487]  INFO -- default-oracle-mio:  ---> Running in 922790701abf
+I, [2016-06-23T09:17:49.751069 #29487]  INFO -- default-oracle-mio: Loaded plugins: ulninfo
+I, [2016-06-23T09:17:49.785155 #29487]  INFO -- default-oracle-mio: Cleaning repos: ol7_UEKR3 ol7_latest
+I, [2016-06-23T09:17:49.785931 #29487]  INFO -- default-oracle-mio: Cleaning up everything
+I, [2016-06-23T09:17:53.059504 #29487]  INFO -- default-oracle-mio:  ---> 2ecd8ac7125a
+I, [2016-06-23T09:17:54.733282 #29487]  INFO -- default-oracle-mio: Removing intermediate container 922790701abf
+I, [2016-06-23T09:17:54.733981 #29487]  INFO -- default-oracle-mio: Step 2 : RUN yum install -y sudo openssh-server openssh-clients which curl
+I, [2016-06-23T09:17:55.085692 #29487]  INFO -- default-oracle-mio:  ---> Running in 09d6fea7d201
+I, [2016-06-23T09:17:55.834422 #29487]  INFO -- default-oracle-mio: Loaded plugins: ulninfo
+I, [2016-06-23T09:18:52.000569 #29487]  INFO -- default-oracle-mio: Package openssh-server-6.6.1p1-25.el7_2.x86_64 already installed and latest version
+I, [2016-06-23T09:18:52.106188 #29487]  INFO -- default-oracle-mio: Package openssh-clients-6.6.1p1-25.el7_2.x86_64 already installed and latest version
+I, [2016-06-23T09:18:52.113594 #29487]  INFO -- default-oracle-mio: Package curl-7.29.0-25.0.1.el7.x86_64 already installed and latest version
+I, [2016-06-23T09:18:52.114988 #29487]  INFO -- default-oracle-mio: Resolving Dependencies
+I, [2016-06-23T09:18:52.120650 #29487]  INFO -- default-oracle-mio: --> Running transaction check
+I, [2016-06-23T09:18:52.121675 #29487]  INFO -- default-oracle-mio: ---> Package sudo.x86_64 0:1.8.6p7-17.el7_2 will be installed
+I, [2016-06-23T09:18:52.241561 #29487]  INFO -- default-oracle-mio: ---> Package which.x86_64 0:2.20-7.el7 will be installed
+I, [2016-06-23T09:18:52.854076 #29487]  INFO -- default-oracle-mio: --> Finished Dependency Resolution
+I, [2016-06-23T09:18:52.891215 #29487]  INFO -- default-oracle-mio: 
+I, [2016-06-23T09:18:52.891360 #29487]  INFO -- default-oracle-mio: Dependencies Resolved
+I, [2016-06-23T09:18:52.894923 #29487]  INFO -- default-oracle-mio: 
+I, [2016-06-23T09:18:52.895007 #29487]  INFO -- default-oracle-mio: ================================================================================
+I, [2016-06-23T09:18:52.895086 #29487]  INFO -- default-oracle-mio:  Package       Arch           Version                  Repository          Size
+I, [2016-06-23T09:18:52.895146 #29487]  INFO -- default-oracle-mio: ================================================================================
+I, [2016-06-23T09:18:52.895202 #29487]  INFO -- default-oracle-mio: Installing:
+I, [2016-06-23T09:18:52.895258 #29487]  INFO -- default-oracle-mio:  sudo          x86_64         1.8.6p7-17.el7_2         ol7_latest         732 k
+I, [2016-06-23T09:18:52.895371 #29487]  INFO -- default-oracle-mio:  which         x86_64         2.20-7.el7               ol7_latest          40 k
+I, [2016-06-23T09:18:52.895434 #29487]  INFO -- default-oracle-mio: 
+I, [2016-06-23T09:18:52.895488 #29487]  INFO -- default-oracle-mio: Transaction Summary
+I, [2016-06-23T09:18:52.895542 #29487]  INFO -- default-oracle-mio: ================================================================================
+I, [2016-06-23T09:18:52.895700 #29487]  INFO -- default-oracle-mio: Install  2 Packages
+I, [2016-06-23T09:18:52.895760 #29487]  INFO -- default-oracle-mio: 
+I, [2016-06-23T09:18:52.897502 #29487]  INFO -- default-oracle-mio: Total download size: 772 k
+I, [2016-06-23T09:18:52.898285 #29487]  INFO -- default-oracle-mio: Installed size: 2.5 M
+I, [2016-06-23T09:18:52.899207 #29487]  INFO -- default-oracle-mio: Downloading packages:
+I, [2016-06-23T09:18:53.531974 #29487]  INFO -- default-oracle-mio: --------------------------------------------------------------------------------
+I, [2016-06-23T09:18:53.533570 #29487]  INFO -- default-oracle-mio: Total                                              1.2 MB/s | 772 kB  00:00     
+I, [2016-06-23T09:18:53.545133 #29487]  INFO -- default-oracle-mio: Running transaction check
+I, [2016-06-23T09:18:53.569334 #29487]  INFO -- default-oracle-mio: Running transaction test
+I, [2016-06-23T09:18:53.621582 #29487]  INFO -- default-oracle-mio: Transaction test succeeded
+I, [2016-06-23T09:18:53.623348 #29487]  INFO -- default-oracle-mio: Running transaction
+I, [2016-06-23T09:18:54.031558 #29487]  INFO -- default-oracle-mio:   Installing : which-2.20-7.el7.x86_64                                      1/2 
+I, [2016-06-23T09:18:54.031826 #29487]  INFO -- default-oracle-mio: install-info: /usr/share/info/dir: could not read (No such file or directory) and could not create (No such file or directory)
+I, [2016-06-23T09:18:54.559203 #29487]  INFO -- default-oracle-mio:   Installing : sudo-1.8.6p7-17.el7_2.x86_64                                 2/2 
+I, [2016-06-23T09:18:54.645776 #29487]  INFO -- default-oracle-mio:   Verifying  : sudo-1.8.6p7-17.el7_2.x86_64                                 1/2 
+I, [2016-06-23T09:18:54.848088 #29487]  INFO -- default-oracle-mio:   Verifying  : which-2.20-7.el7.x86_64                                      2/2 
+I, [2016-06-23T09:18:54.848227 #29487]  INFO -- default-oracle-mio: 
+I, [2016-06-23T09:18:54.848303 #29487]  INFO -- default-oracle-mio: Installed:
+I, [2016-06-23T09:18:54.848437 #29487]  INFO -- default-oracle-mio:   sudo.x86_64 0:1.8.6p7-17.el7_2            which.x86_64 0:2.20-7.el7           
+I, [2016-06-23T09:18:54.848494 #29487]  INFO -- default-oracle-mio: 
+I, [2016-06-23T09:18:54.849945 #29487]  INFO -- default-oracle-mio: Complete!
+I, [2016-06-23T09:19:40.870178 #29487]  INFO -- default-oracle-mio:  ---> fce27e884da5
+I, [2016-06-23T09:19:42.772829 #29487]  INFO -- default-oracle-mio: Removing intermediate container 09d6fea7d201
+I, [2016-06-23T09:19:42.773419 #29487]  INFO -- default-oracle-mio: Step 3 : RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
+I, [2016-06-23T09:19:42.998370 #29487]  INFO -- default-oracle-mio:  ---> Running in 01155f2292a2
+I, [2016-06-23T09:19:43.736001 #29487]  INFO -- default-oracle-mio: Generating public/private rsa key pair.
+I, [2016-06-23T09:19:43.736143 #29487]  INFO -- default-oracle-mio: Your identification has been saved in /etc/ssh/ssh_host_rsa_key.
+I, [2016-06-23T09:19:43.736206 #29487]  INFO -- default-oracle-mio: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
+I, [2016-06-23T09:19:43.736289 #29487]  INFO -- default-oracle-mio: The key fingerprint is:
+I, [2016-06-23T09:19:43.736352 #29487]  INFO -- default-oracle-mio: 3e:f7:36:f0:49:3e:6e:62:5a:2c:c6:9c:a5:08:69:b6 root@010970c559ee
+I, [2016-06-23T09:19:43.736406 #29487]  INFO -- default-oracle-mio: The key's randomart image is:
+I, [2016-06-23T09:19:43.736459 #29487]  INFO -- default-oracle-mio: +--[ RSA 2048]----+
+I, [2016-06-23T09:19:43.736513 #29487]  INFO -- default-oracle-mio: |                 |
+I, [2016-06-23T09:19:43.736587 #29487]  INFO -- default-oracle-mio: |                 |
+I, [2016-06-23T09:19:43.736872 #29487]  INFO -- default-oracle-mio: |                 |
+I, [2016-06-23T09:19:43.736929 #29487]  INFO -- default-oracle-mio: |     .           |
+I, [2016-06-23T09:19:43.736981 #29487]  INFO -- default-oracle-mio: |    =   S .      |
+I, [2016-06-23T09:19:43.737032 #29487]  INFO -- default-oracle-mio: |   o o = =. .    |
+I, [2016-06-23T09:19:43.737082 #29487]  INFO -- default-oracle-mio: |    E . X += .   |
+I, [2016-06-23T09:19:43.737133 #29487]  INFO -- default-oracle-mio: |       . =o.O    |
+I, [2016-06-23T09:19:43.737184 #29487]  INFO -- default-oracle-mio: |        .o =oo   |
+I, [2016-06-23T09:19:43.737260 #29487]  INFO -- default-oracle-mio: +-----------------+
+I, [2016-06-23T09:19:46.737619 #29487]  INFO -- default-oracle-mio:  ---> d1c138252316
+I, [2016-06-23T09:19:48.450289 #29487]  INFO -- default-oracle-mio: Removing intermediate container 01155f2292a2
+I, [2016-06-23T09:19:48.450902 #29487]  INFO -- default-oracle-mio: Step 4 : RUN ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key -N ''
+I, [2016-06-23T09:19:48.640822 #29487]  INFO -- default-oracle-mio:  ---> Running in dedf08d5e4bf
+I, [2016-06-23T09:19:49.224590 #29487]  INFO -- default-oracle-mio: Generating public/private dsa key pair.
+I, [2016-06-23T09:19:49.224730 #29487]  INFO -- default-oracle-mio: Your identification has been saved in /etc/ssh/ssh_host_dsa_key.
+I, [2016-06-23T09:19:49.224790 #29487]  INFO -- default-oracle-mio: Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub.
+I, [2016-06-23T09:19:49.224844 #29487]  INFO -- default-oracle-mio: The key fingerprint is:
+I, [2016-06-23T09:19:49.224920 #29487]  INFO -- default-oracle-mio: 5b:fe:e4:03:01:a3:40:24:47:9d:cc:6e:bf:c1:b8:61 root@010970c559ee
+I, [2016-06-23T09:19:49.224979 #29487]  INFO -- default-oracle-mio: The key's randomart image is:
+I, [2016-06-23T09:19:49.225032 #29487]  INFO -- default-oracle-mio: +--[ DSA 1024]----+
+I, [2016-06-23T09:19:49.225086 #29487]  INFO -- default-oracle-mio: |  .+=+ .         |
+I, [2016-06-23T09:19:49.225303 #29487]  INFO -- default-oracle-mio: |   o. = o        |
+I, [2016-06-23T09:19:49.225363 #29487]  INFO -- default-oracle-mio: |     o . o       |
+I, [2016-06-23T09:19:49.225440 #29487]  INFO -- default-oracle-mio: |      +   .      |
+I, [2016-06-23T09:19:49.225495 #29487]  INFO -- default-oracle-mio: |     . +S ..     |
+I, [2016-06-23T09:19:49.225546 #29487]  INFO -- default-oracle-mio: |      E ++.      |
+I, [2016-06-23T09:19:49.225598 #29487]  INFO -- default-oracle-mio: |     . o.o...    |
+I, [2016-06-23T09:19:49.225649 #29487]  INFO -- default-oracle-mio: |      . .  +.    |
+I, [2016-06-23T09:19:49.225700 #29487]  INFO -- default-oracle-mio: |            o.   |
+I, [2016-06-23T09:19:49.225751 #29487]  INFO -- default-oracle-mio: +-----------------+
+I, [2016-06-23T09:20:02.606645 #29487]  INFO -- default-oracle-mio:  ---> e07ece2116eb
+I, [2016-06-23T09:20:09.714547 #29487]  INFO -- default-oracle-mio: Removing intermediate container dedf08d5e4bf
+I, [2016-06-23T09:20:09.715275 #29487]  INFO -- default-oracle-mio: Step 5 : RUN if ! getent passwd kitchen; then useradd -d /home/kitchen -m -s /bin/bash kitchen; fi
+I, [2016-06-23T09:20:09.917316 #29487]  INFO -- default-oracle-mio:  ---> Running in 1667751c2f1c
+I, [2016-06-23T09:20:13.668323 #29487]  INFO -- default-oracle-mio:  ---> f3fc14670ebf
+I, [2016-06-23T09:20:15.420838 #29487]  INFO -- default-oracle-mio: Removing intermediate container 1667751c2f1c
+I, [2016-06-23T09:20:15.421714 #29487]  INFO -- default-oracle-mio: Step 6 : RUN echo kitchen:kitchen | chpasswd
+I, [2016-06-23T09:20:15.622381 #29487]  INFO -- default-oracle-mio:  ---> Running in 6e7555009af2
+I, [2016-06-23T09:20:27.909182 #29487]  INFO -- default-oracle-mio:  ---> e85c02593cd2
+I, [2016-06-23T09:20:29.638317 #29487]  INFO -- default-oracle-mio: Removing intermediate container 6e7555009af2
+I, [2016-06-23T09:20:29.638924 #29487]  INFO -- default-oracle-mio: Step 7 : RUN echo 'kitchen ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+I, [2016-06-23T09:20:29.819756 #29487]  INFO -- default-oracle-mio:  ---> Running in d5154f0106d5
+I, [2016-06-23T09:20:33.244625 #29487]  INFO -- default-oracle-mio:  ---> 2f71171fd9f2
+I, [2016-06-23T09:20:38.858573 #29487]  INFO -- default-oracle-mio: Removing intermediate container d5154f0106d5
+I, [2016-06-23T09:20:38.859344 #29487]  INFO -- default-oracle-mio: Step 8 : RUN mkdir -p /etc/sudoers.d
+I, [2016-06-23T09:20:39.802601 #29487]  INFO -- default-oracle-mio:  ---> Running in 5aec26a15e7e
+I, [2016-06-23T09:20:54.311593 #29487]  INFO -- default-oracle-mio:  ---> 9cd2f86d220b
+I, [2016-06-23T09:20:56.024847 #29487]  INFO -- default-oracle-mio: Removing intermediate container 5aec26a15e7e
+I, [2016-06-23T09:20:56.025438 #29487]  INFO -- default-oracle-mio: Step 9 : RUN echo 'kitchen ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers.d/kitchen
+I, [2016-06-23T09:20:56.226033 #29487]  INFO -- default-oracle-mio:  ---> Running in ca7abb6e8f62
+I, [2016-06-23T09:20:59.819613 #29487]  INFO -- default-oracle-mio:  ---> ae634391614a
+I, [2016-06-23T09:21:09.702427 #29487]  INFO -- default-oracle-mio: Removing intermediate container ca7abb6e8f62
+I, [2016-06-23T09:21:09.703176 #29487]  INFO -- default-oracle-mio: Step 10 : RUN chmod 0440 /etc/sudoers.d/kitchen
+I, [2016-06-23T09:21:10.581408 #29487]  INFO -- default-oracle-mio:  ---> Running in d7d32ff8ea1e
+I, [2016-06-23T09:21:14.009610 #29487]  INFO -- default-oracle-mio:  ---> f14c73676a46
+I, [2016-06-23T09:21:15.800798 #29487]  INFO -- default-oracle-mio: Removing intermediate container d7d32ff8ea1e
+I, [2016-06-23T09:21:15.801727 #29487]  INFO -- default-oracle-mio: Step 11 : RUN [ ! -d /home/kitchen/.ssh ] && mkdir /home/kitchen/.ssh
+I, [2016-06-23T09:21:15.994830 #29487]  INFO -- default-oracle-mio:  ---> Running in 770fd0364bc8
+I, [2016-06-23T09:21:23.647608 #29487]  INFO -- default-oracle-mio:  ---> 04e9499e6f34
+I, [2016-06-23T09:21:36.970448 #29487]  INFO -- default-oracle-mio: Removing intermediate container 770fd0364bc8
+I, [2016-06-23T09:21:36.971057 #29487]  INFO -- default-oracle-mio: Step 12 : RUN chown -R kitchen /home/kitchen/.ssh
+I, [2016-06-23T09:21:37.162219 #29487]  INFO -- default-oracle-mio:  ---> Running in 8ecbb7bac0d2
+I, [2016-06-23T09:21:40.594231 #29487]  INFO -- default-oracle-mio:  ---> 66a489d7366d
+I, [2016-06-23T09:21:42.422319 #29487]  INFO -- default-oracle-mio: Removing intermediate container 8ecbb7bac0d2
+I, [2016-06-23T09:21:42.422958 #29487]  INFO -- default-oracle-mio: Step 13 : RUN chmod 0700 /home/kitchen/.ssh
+I, [2016-06-23T09:21:42.614216 #29487]  INFO -- default-oracle-mio:  ---> Running in ef464f3ce376
+I, [2016-06-23T09:21:46.067554 #29487]  INFO -- default-oracle-mio:  ---> cb4911e04102
+I, [2016-06-23T09:21:47.838821 #29487]  INFO -- default-oracle-mio: Removing intermediate container ef464f3ce376
+I, [2016-06-23T09:21:47.839760 #29487]  INFO -- default-oracle-mio: Step 14 : RUN echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDR3uVx/TYrGJYiVow6Y+4Izu3KjeNFYGafkLcef1zNYQgWj85LUTdUZuMMuLPqqL0i5RBQyZnNga79lPsaNxQgIk5ep30P6TSZewlOCslH1HKATjTN9Mlbq698JCKhw1BaPE4Y0EIdVdDn/kS4cxee6VzFnGgu/E8m1P8QdiuzPRjakcWncXpD04IGiTMlf2MawV6uaFZEaUOv7lHOvI4mAZnxfWuKKZerbV8s/XfwMZ9H2Nxq50kA+exmiB5nVO786ka+gAP322Fp+lkmJqF+QiamjwViFifRz3cNR/Hq6N42UBY01xi/PY3OoUpHTZT3aODzNePdTazaR4EHIhbh kitchen_docker_key' >> /home/kitchen/.ssh/authorized_keys
+I, [2016-06-23T09:21:48.040270 #29487]  INFO -- default-oracle-mio:  ---> Running in 7a669b3c96e8
+I, [2016-06-23T09:21:51.689617 #29487]  INFO -- default-oracle-mio:  ---> 92b1af4f0278
+I, [2016-06-23T09:22:00.774411 #29487]  INFO -- default-oracle-mio: Removing intermediate container 7a669b3c96e8
+I, [2016-06-23T09:22:00.774992 #29487]  INFO -- default-oracle-mio: Step 15 : RUN chown kitchen /home/kitchen/.ssh/authorized_keys
+I, [2016-06-23T09:22:01.734546 #29487]  INFO -- default-oracle-mio:  ---> Running in 8ab77d923d4c
+I, [2016-06-23T09:22:28.881657 #29487]  INFO -- default-oracle-mio:  ---> 1b776c2bf3aa
+I, [2016-06-23T09:22:30.594434 #29487]  INFO -- default-oracle-mio: Removing intermediate container 8ab77d923d4c
+I, [2016-06-23T09:22:30.595143 #29487]  INFO -- default-oracle-mio: Step 16 : RUN chmod 0600 /home/kitchen/.ssh/authorized_keys
+I, [2016-06-23T09:22:30.803246 #29487]  INFO -- default-oracle-mio:  ---> Running in d9b2ad459710
+I, [2016-06-23T09:22:34.249653 #29487]  INFO -- default-oracle-mio:  ---> 5e5657680973
+I, [2016-06-23T09:22:35.986235 #29487]  INFO -- default-oracle-mio: Removing intermediate container d9b2ad459710
+I, [2016-06-23T09:22:35.986856 #29487]  INFO -- default-oracle-mio: Successfully built 5e5657680973
+I, [2016-06-23T09:22:36.343574 #29487]  INFO -- default-oracle-mio: fb80b364e055a8f2914eff189bd8900f8b14565131fcac24b6fc51ecb861e3ad
+I, [2016-06-23T09:22:36.985063 #29487]  INFO -- default-oracle-mio: 0.0.0.0:32772
+I, [2016-06-23T09:22:37.160963 #29487]  INFO -- default-oracle-mio: [SSH] Established
+I, [2016-06-23T09:22:37.166425 #29487]  INFO -- default-oracle-mio: Finished creating <default-oracle-mio> (5m20.86s).
+I, [2016-06-23T09:22:37.166762 #29487]  INFO -- default-oracle-mio: -----> Converging <default-oracle-mio>...
+W, [2016-06-23T09:22:37.167992 #29487]  WARN -- default-oracle-mio: Running legacy converge for 'Docker' Driver
+I, [2016-06-23T09:22:37.168528 #29487]  INFO -- default-oracle-mio: Preparing files for transfer
+I, [2016-06-23T09:22:37.168701 #29487]  INFO -- default-oracle-mio: Preparing dna.json
+I, [2016-06-23T09:22:37.169236 #29487]  INFO -- default-oracle-mio: Resolving cookbook dependencies with Berkshelf 4.1.1...
+I, [2016-06-23T09:22:37.278216 #29487]  INFO -- default-oracle-mio: Removing non-cookbook files before transfer
+I, [2016-06-23T09:22:37.283730 #29487]  INFO -- default-oracle-mio: Preparing validation.pem
+I, [2016-06-23T09:22:37.285154 #29487]  INFO -- default-oracle-mio: Preparing client.rb
+I, [2016-06-23T09:22:37.447944 #29487]  INFO -- default-oracle-mio: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-06-23T09:22:37.458829 #29487]  INFO -- default-oracle-mio: Downloading https://www.chef.io/chef/install.sh to file /tmp/install.sh
+I, [2016-06-23T09:22:37.459772 #29487]  INFO -- default-oracle-mio: Trying curl...
+I, [2016-06-23T09:22:37.868043 #29487]  INFO -- default-oracle-mio: Download complete.
+I, [2016-06-23T09:22:37.929865 #29487]  INFO -- default-oracle-mio: el 7 x86_64
+I, [2016-06-23T09:22:37.929963 #29487]  INFO -- default-oracle-mio: Getting information for chef stable  for el...
+I, [2016-06-23T09:22:37.930024 #29487]  INFO -- default-oracle-mio: downloading https://omnitruck-direct.chef.io/stable/chef/metadata?v=&p=el&pv=7&m=x86_64
+I, [2016-06-23T09:22:37.931691 #29487]  INFO -- default-oracle-mio:   to file /tmp/install.sh.30/metadata.txt
+I, [2016-06-23T09:22:37.933766 #29487]  INFO -- default-oracle-mio: trying curl...
+I, [2016-06-23T09:22:38.451163 #29487]  INFO -- default-oracle-mio: sha1	4b0ecd14127fe6d0e5423f78a733ce43db1814c7
+I, [2016-06-23T09:22:38.451322 #29487]  INFO -- default-oracle-mio: sha256	a5d5db51eb57cdb0045953f4007f10bf50199c40c0d89c41272cf171d56b6c53
+I, [2016-06-23T09:22:38.451468 #29487]  INFO -- default-oracle-mio: url	https://packages.chef.io/stable/el/7/chef-12.11.18-1.el7.x86_64.rpm
+I, [2016-06-23T09:22:38.451531 #29487]  INFO -- default-oracle-mio: version	12.11.18
+I, [2016-06-23T09:22:38.458725 #29487]  INFO -- default-oracle-mio: downloaded metadata file looks valid...
+I, [2016-06-23T09:22:38.502857 #29487]  INFO -- default-oracle-mio: downloading https://packages.chef.io/stable/el/7/chef-12.11.18-1.el7.x86_64.rpm
+I, [2016-06-23T09:22:38.502948 #29487]  INFO -- default-oracle-mio:   to file /tmp/install.sh.30/chef-12.11.18-1.el7.x86_64.rpm
+I, [2016-06-23T09:22:38.505675 #29487]  INFO -- default-oracle-mio: trying curl...
+I, [2016-06-23T09:22:41.842186 #29487]  INFO -- default-oracle-mio: Comparing checksum with sha256sum...
+I, [2016-06-23T09:22:42.435156 #29487]  INFO -- default-oracle-mio: 
+I, [2016-06-23T09:22:42.435341 #29487]  INFO -- default-oracle-mio: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-06-23T09:22:42.435408 #29487]  INFO -- default-oracle-mio: 
+I, [2016-06-23T09:22:42.435465 #29487]  INFO -- default-oracle-mio: You are installing an omnibus package without a version pin.  If you are installing
+I, [2016-06-23T09:22:42.435521 #29487]  INFO -- default-oracle-mio: on production servers via an automated process this is DANGEROUS and you will
+I, [2016-06-23T09:22:42.435577 #29487]  INFO -- default-oracle-mio: be upgraded without warning on new releases, even to new major releases.
+I, [2016-06-23T09:22:42.436886 #29487]  INFO -- default-oracle-mio: Letting the version float is only appropriate in desktop, test, development or
+I, [2016-06-23T09:22:42.436963 #29487]  INFO -- default-oracle-mio: CI/CD environments.
+I, [2016-06-23T09:22:42.437018 #29487]  INFO -- default-oracle-mio: 
+I, [2016-06-23T09:22:42.437072 #29487]  INFO -- default-oracle-mio: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-06-23T09:22:42.437123 #29487]  INFO -- default-oracle-mio: 
+I, [2016-06-23T09:22:42.437175 #29487]  INFO -- default-oracle-mio: Installing chef 
+I, [2016-06-23T09:22:42.437314 #29487]  INFO -- default-oracle-mio: installing with rpm...
+I, [2016-06-23T09:22:42.585142 #29487]  INFO -- default-oracle-mio: warning: /tmp/install.sh.30/chef-12.11.18-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2016-06-23T09:22:44.268311 #29487]  INFO -- default-oracle-mio: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+I, [2016-06-23T09:22:44.295752 #29487]  INFO -- default-oracle-mio: Updating / installing...
+I, [2016-06-23T09:23:05.911471 #29487]  INFO -- default-oracle-mio:    1:chef-12.11.18-1.el7                                                (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 51%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
+I, [2016-06-23T09:23:07.718242 #29487]  INFO -- default-oracle-mio: Thank you for installing Chef!
+I, [2016-06-23T09:23:07.975441 #29487]  INFO -- default-oracle-mio: Transferring files to <default-oracle-mio>
+I, [2016-06-23T09:23:10.869202 #29487]  INFO -- default-oracle-mio: Starting Chef Client, version 12.11.18
+I, [2016-06-23T09:23:15.314118 #29487]  INFO -- default-oracle-mio: Creating a new client identity for default-oracle-mio using the validator key.
+I, [2016-06-23T09:23:15.700215 #29487]  INFO -- default-oracle-mio: resolving cookbooks for run list: ["workstation::default"]
+I, [2016-06-23T09:23:15.740744 #29487]  INFO -- default-oracle-mio: Synchronizing Cookbooks:
+I, [2016-06-23T09:23:15.754774 #29487]  INFO -- default-oracle-mio:   - workstation (0.1.0)
+I, [2016-06-23T09:23:15.755810 #29487]  INFO -- default-oracle-mio: Installing Cookbook Gems:
+I, [2016-06-23T09:23:15.757693 #29487]  INFO -- default-oracle-mio: Compiling Cookbooks...
+I, [2016-06-23T09:23:15.766735 #29487]  INFO -- default-oracle-mio: Converging 3 resources
+I, [2016-06-23T09:23:15.766930 #29487]  INFO -- default-oracle-mio: Recipe: workstation::setup
+I, [2016-06-23T09:23:49.404266 #29487]  INFO -- default-oracle-mio:   * yum_package[tree] action install
+I, [2016-06-23T09:23:49.407943 #29487]  INFO -- default-oracle-mio:     - install version 1.6.0-10.el7 of package tree
+I, [2016-06-23T09:24:11.192391 #29487]  INFO -- default-oracle-mio:   * yum_package[git] action install
+I, [2016-06-23T09:24:11.193087 #29487]  INFO -- default-oracle-mio:     - install version 1.8.3.1-6.el7_2.1 of package git
+I, [2016-06-23T09:24:11.288227 #29487]  INFO -- default-oracle-mio:   * file[/etc/motd] action create
+I, [2016-06-23T09:24:11.288381 #29487]  INFO -- default-oracle-mio:     - update content in file /etc/motd from e3b0c4 to f188ce
+I, [2016-06-23T09:24:11.289863 #29487]  INFO -- default-oracle-mio:     --- /etc/motd	2013-06-07 14:31:32.000000000 +0000
+I, [2016-06-23T09:24:11.290063 #29487]  INFO -- default-oracle-mio:     +++ /etc/.chef-motd20160623-149-2yas3z	2016-06-23 09:24:11.272267851 +0000
+I, [2016-06-23T09:24:11.290124 #29487]  INFO -- default-oracle-mio:     @@ -1 +1,2 @@
+I, [2016-06-23T09:24:11.369068 #29487]  INFO -- default-oracle-mio:     +Property of Arnaud
+I, [2016-06-23T09:24:11.495127 #29487]  INFO -- default-oracle-mio: 
+I, [2016-06-23T09:24:11.495410 #29487]  INFO -- default-oracle-mio: Running handlers:
+I, [2016-06-23T09:24:11.495476 #29487]  INFO -- default-oracle-mio: Running handlers complete
+I, [2016-06-23T09:24:11.495532 #29487]  INFO -- default-oracle-mio: Chef Client finished, 3/3 resources updated in 01 minutes 00 seconds
+I, [2016-06-23T09:24:11.910849 #29487]  INFO -- default-oracle-mio: Finished converging <default-oracle-mio> (1m34.74s).

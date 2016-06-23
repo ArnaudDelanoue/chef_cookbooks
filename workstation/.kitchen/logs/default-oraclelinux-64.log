@@ -1,0 +1,26 @@
+I, [2016-06-23T08:58:45.490419 #23088]  INFO -- default-oraclelinux-64: -----> Creating <default-oraclelinux-64>...
+E, [2016-06-23T08:58:45.490682 #23088] ERROR -- default-oraclelinux-64: Create failed on instance <default-oraclelinux-64>.
+E, [2016-06-23T08:58:45.491605 #23088] ERROR -- default-oraclelinux-64: ------Exception-------
+E, [2016-06-23T08:58:45.491671 #23088] ERROR -- default-oraclelinux-64: Class: Kitchen::ActionFailed
+E, [2016-06-23T08:58:45.491718 #23088] ERROR -- default-oraclelinux-64: Message: Unknown platform 'oraclelinux'
+E, [2016-06-23T08:58:45.491762 #23088] ERROR -- default-oraclelinux-64: ------Backtrace-------
+E, [2016-06-23T08:58:45.491806 #23088] ERROR -- default-oraclelinux-64: /home/chef/.chefdk/gem/ruby/2.1.0/gems/kitchen-docker-2.3.0/lib/kitchen/driver/docker.rb:198:in `build_dockerfile'
+E, [2016-06-23T08:58:45.491850 #23088] ERROR -- default-oraclelinux-64: /home/chef/.chefdk/gem/ruby/2.1.0/gems/kitchen-docker-2.3.0/lib/kitchen/driver/docker.rb:233:in `dockerfile'
+E, [2016-06-23T08:58:45.491894 #23088] ERROR -- default-oraclelinux-64: /home/chef/.chefdk/gem/ruby/2.1.0/gems/kitchen-docker-2.3.0/lib/kitchen/driver/docker.rb:250:in `build_image'
+E, [2016-06-23T08:58:45.491938 #23088] ERROR -- default-oraclelinux-64: /home/chef/.chefdk/gem/ruby/2.1.0/gems/kitchen-docker-2.3.0/lib/kitchen/driver/docker.rb:104:in `create'
+E, [2016-06-23T08:58:45.491996 #23088] ERROR -- default-oraclelinux-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:431:in `public_send'
+E, [2016-06-23T08:58:45.492042 #23088] ERROR -- default-oraclelinux-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:431:in `block in perform_action'
+E, [2016-06-23T08:58:45.492087 #23088] ERROR -- default-oraclelinux-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `call'
+E, [2016-06-23T08:58:45.492151 #23088] ERROR -- default-oraclelinux-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:495:in `synchronize_or_call'
+E, [2016-06-23T08:58:45.492197 #23088] ERROR -- default-oraclelinux-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:460:in `block in action'
+E, [2016-06-23T08:58:45.492241 #23088] ERROR -- default-oraclelinux-64: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-06-23T08:58:45.492304 #23088] ERROR -- default-oraclelinux-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:459:in `action'
+E, [2016-06-23T08:58:45.492355 #23088] ERROR -- default-oraclelinux-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:431:in `perform_action'
+E, [2016-06-23T08:58:45.492400 #23088] ERROR -- default-oraclelinux-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:359:in `create_action'
+E, [2016-06-23T08:58:45.492457 #23088] ERROR -- default-oraclelinux-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-06-23T08:58:45.492503 #23088] ERROR -- default-oraclelinux-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `each'
+E, [2016-06-23T08:58:45.492547 #23088] ERROR -- default-oraclelinux-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-06-23T08:58:45.492592 #23088] ERROR -- default-oraclelinux-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-06-23T08:58:45.492636 #23088] ERROR -- default-oraclelinux-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `public_send'
+E, [2016-06-23T08:58:45.492680 #23088] ERROR -- default-oraclelinux-64: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.5.0/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2016-06-23T08:58:45.492724 #23088] ERROR -- default-oraclelinux-64: ----------------------

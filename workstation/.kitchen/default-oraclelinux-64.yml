@@ -1,0 +1,2 @@
+---
+ssh_key: "/home/chef/cookbooks/workstation/.kitchen/docker_id_rsa"

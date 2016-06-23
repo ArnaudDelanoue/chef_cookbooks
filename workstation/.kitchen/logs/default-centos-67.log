@@ -1,0 +1,26 @@
+I, [2016-06-23T09:17:07.417086 #29487]  INFO -- default-centos-67: -----> Converging <default-centos-67>...
+W, [2016-06-23T09:17:07.418098 #29487]  WARN -- default-centos-67: Running legacy converge for 'Docker' Driver
+I, [2016-06-23T09:17:07.418579 #29487]  INFO -- default-centos-67: Preparing files for transfer
+I, [2016-06-23T09:17:07.418735 #29487]  INFO -- default-centos-67: Preparing dna.json
+I, [2016-06-23T09:17:07.419147 #29487]  INFO -- default-centos-67: Resolving cookbook dependencies with Berkshelf 4.1.1...
+I, [2016-06-23T09:17:07.512444 #29487]  INFO -- default-centos-67: Removing non-cookbook files before transfer
+I, [2016-06-23T09:17:07.522594 #29487]  INFO -- default-centos-67: Preparing validation.pem
+I, [2016-06-23T09:17:07.523127 #29487]  INFO -- default-centos-67: Preparing client.rb
+I, [2016-06-23T09:17:07.649240 #29487]  INFO -- default-centos-67: -----> Chef Omnibus installation detected (install only if missing)
+I, [2016-06-23T09:17:07.696156 #29487]  INFO -- default-centos-67: Transferring files to <default-centos-67>
+I, [2016-06-23T09:17:10.249635 #29487]  INFO -- default-centos-67: Starting Chef Client, version 12.11.18
+I, [2016-06-23T09:17:13.697147 #29487]  INFO -- default-centos-67: resolving cookbooks for run list: ["workstation::default"]
+I, [2016-06-23T09:17:13.746918 #29487]  INFO -- default-centos-67: Synchronizing Cookbooks:
+I, [2016-06-23T09:17:13.751774 #29487]  INFO -- default-centos-67:   - workstation (0.1.0)
+I, [2016-06-23T09:17:13.751855 #29487]  INFO -- default-centos-67: Installing Cookbook Gems:
+I, [2016-06-23T09:17:13.751914 #29487]  INFO -- default-centos-67: Compiling Cookbooks...
+I, [2016-06-23T09:17:13.761766 #29487]  INFO -- default-centos-67: Converging 3 resources
+I, [2016-06-23T09:17:13.761849 #29487]  INFO -- default-centos-67: Recipe: workstation::setup
+I, [2016-06-23T09:17:15.411147 #29487]  INFO -- default-centos-67:   * yum_package[tree] action install (up to date)
+I, [2016-06-23T09:17:15.415730 #29487]  INFO -- default-centos-67:   * yum_package[git] action install (up to date)
+I, [2016-06-23T09:17:15.422731 #29487]  INFO -- default-centos-67:   * file[/etc/motd] action create (up to date)
+I, [2016-06-23T09:17:15.464936 #29487]  INFO -- default-centos-67: 
+I, [2016-06-23T09:17:15.465045 #29487]  INFO -- default-centos-67: Running handlers:
+I, [2016-06-23T09:17:15.465131 #29487]  INFO -- default-centos-67: Running handlers complete
+I, [2016-06-23T09:17:15.465191 #29487]  INFO -- default-centos-67: Chef Client finished, 0/3 resources updated in 05 seconds
+I, [2016-06-23T09:17:16.304914 #29487]  INFO -- default-centos-67: Finished converging <default-centos-67> (0m8.88s).
